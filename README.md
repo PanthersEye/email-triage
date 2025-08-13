@@ -1,9 +1,5 @@
 # Email Triage & Reply API
 
-Here’s a one-page, plain-text write-up you can paste into the README:
-
----
-
 # Overview
 
 This project is a small, production-style **FastAPI** application that triages incoming emails. It exposes documented HTTP endpoints to (1) **train** a text classifier, (2) **predict** a category for an email, (3) **score priority** using simple keyword heuristics, and (4) optionally **draft a reply** via OpenAI (if an API key is configured). The service is framework-agnostic on the client side—anything that can make HTTP requests can use it.
